@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    background: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 250px;
+    height: 55%;
+    padding: 12px 14px;
+    background: hsl(0, 0%, 100%);
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 4px  black;
+    font-family:Figtree;
+    transition: 2s all;
+    position: absolute;
+    z-index: 2;
+}
+.card:hover{
+    transform: rotate(360deg);
+}
+
+.card_header{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.foto1_div{
+    width: 100%;
+    height: 70%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.foto1_div img{
+    width: 100%;
+    height: 100%;
+}
+
+.card_header button{
+    width: 25%;
+    background: hsl(47, 88%, 63%);
+    color: black;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 3px;
+    font-size: 8px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 3px;
+}
+.card_header p{
+    font-size: 9px;
+    font-weight: 600;
+    color: hsl(0, 0%, 7%);
+}
+
+.card_footer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.card_footer h1{
+    font-size: 16px;
+    font-weight:800;
+}
+.card_footer p{
+    font-size: 10px;
+    line-height: 15px;
+    color: hsl(0, 0%, 42%);
+    font-weight: 500;
+}
+.foto2_name p{
+    font-size: 10px;
+    font-weight: 800;
+    color: black;
+}
+
+.foto2_name{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto2_div{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 1s all;
+}
+.foto2_div img{
+    width: 100%;
+    height: 100%;
+}
+.foto2_div:active{
+    transform: scale(5);
+}
